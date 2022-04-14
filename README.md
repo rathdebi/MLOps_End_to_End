@@ -5,6 +5,7 @@ Many a times , very oftern once after tarining a model , the obvious ask would b
 it production ready..
 
 a typical deployment example:-
+==============================
 
 let us take one example where our task is to build a model that predicts a product(new one or  used one)
 by using visual inspection. More formally this belongs to computer vision problem statement. once the model
@@ -16,6 +17,7 @@ coined as data drift. That means delpoyed model is not able to generalize well t
 predictions as such.
 
 machine learning in production:-
+================================
 
 let us imagine that a machine leanring model(y=f(x)) from above deployment strategy find its way to production
 system. if you really try to surface around the amount of code it takes to make it production ready will be around 5-10 %.
