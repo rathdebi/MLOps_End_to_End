@@ -60,7 +60,7 @@ Meaning that our mapping that does prediction will now generate output value way
 or prior to earlier iteration.
 
 After deployment of any model the most important aspect is to manage or mitigate these two issues carefully.
-In addition this there would be software engineering issues that needs to be fixed as well. Let us discuss about
+In addition to this there exists software engineering issues that needs to be fixed as well. Let us discuss about
 these challenges,
 
 	- how data is supposed to come (real time or batch process)
