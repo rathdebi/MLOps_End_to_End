@@ -35,7 +35,7 @@ accepting challenges of deployment:-
 ====================================
 Once after deploying model in production there could be two challenges that may arise or pop up. 
 
-To discuss about first challenge, a.k.a data drift and the other one is model drift.
+To discuss about first challenge, a.k.a data drift and the other one is model drift. let us discuss about both of them in detail.
 
 data drift:-
 ============
