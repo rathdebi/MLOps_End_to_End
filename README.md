@@ -79,7 +79,7 @@ data distribution has changed in test or validation set.
 
 common deployment cases:-
 =========================
-in accordance with the ML project deplyment following cases take into account mentioned below.
+in accordance with the ML project deployment following cases own their account as mentioned below.
 	- offering a new product capability
 	- automate or assist new task
 	- replace old/unproductive ML system
