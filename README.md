@@ -77,5 +77,64 @@ a new develpment team has changed model mapping(Y = F(X's) from linear to non li
 Accordingly a complete new ML project lifecycle activity might suffer from the concept of data drift, if any way 
 data distribution has changed in test or validation set.
 
+common deployment cases:-
+=========================
+in accordance with the ML project deplyment following cases take into account mentioned below.
+	- offering a new product capability
+	- automate or assist new task
+	- replace old/unproductive ML system
+
+let us detail down each one case with specifics. 
+Being able to develop a new problem statement like the one with visual inspection of products would demand 
+an end to end deployment strategy in order to make things work.
+
+With an ongoing ML system in place there might be chances that set of tasks needs to be automated. however
+at times a specific task could be to add a new task to existing workflow. These types of requirements will
+demand a deployment strategy of its own.
+
+Following feedback and response loop of any ML project question may arise to replace a decade old , inefficient
+application with an efficienet ML system in place. to negotiate this requirement a deployment strategy is required
+as well.
+
+one thing to keep in mind here is that all the cases related deployment performs two specific task,
+	- gradual monitoring/shift operation
+	- rollback operation
+
+As per deployment cases different types of deployment strategy attain its meaning. let us delve into each of them.
+	- shadow mode:-
+	---------------
+		
+		it allows a visual inspection (in this case) that examines output from ML model and to that
+		of a human to run through. in essence this will indeed help that runs in parallel and gather more 
+		understaning on data and performance by not doing any decisions on data.
+
+	- canary mode:-
+	----------------
+		it seems like when a ML model is ready to be tested in real time, a common deployment strategy that
+		fall in place , a.k.a canary deployment with a minimum of traffic( around 5 to 10 %). Then it starts
+		predicing output with a gradual shift in trafiic to be monitored. Only when the system acruires
+		enough confidence on prediction then it is allowed to ramp up with more traffic in a gradual manner.
+
+	- blue green mode:-
+	--------------------
+		in blue green mode, ML model is routed to an old/base application and new/enhanced application. depending
+		upon performance of applied ML model traffic is allowed to make predictions using new model or else 
+		router will use old/base model. This will enable an easy way to rollback of something goes wrong.
+		in typical scenario, one can use a complete traffic shift or a gradual shift of traffic.
+
+
+degrees of automation:-
+=======================
+as of now it is evident that ML model can be used to automate tasks by using different modes of deployment
+strategy. but the real challenge how are we going to automate ? many ML system gradually starts from human 
+in loop till it finds that suitability of using full AI automation to make data driven decisions completely.
+
+let us discuss about different types automation.
+	- human only ( visually inspect all by human)
+	- shadow mode ( use both human and AI to go side by side)
+	- AI assistane ( helps human to a greater degree)
+	- partial automation ( consider ML model predictions confidence, if not send it to human)
+	- full automation ( ML model is taking every single decision)
+
 
 # MLOps_End_to_End
