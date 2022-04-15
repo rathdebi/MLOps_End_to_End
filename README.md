@@ -171,4 +171,31 @@ retraining looks more in action and in some consumer based applications there ma
 place to fix any kinds of alerts or change.
 
 
+pipeline monitoring:-
+=====================
+as part of our earlier example of visual inspection model that predicts a product either damaged or new one 
+from its image.
+
+here the model will take an example image of of product, run the model and predits whether or not any given
+product image is damged or new one.
+
+
+product image ----> generative model -------> damaged or new one
+product image ----> generative model -------> better resolution and product screening ----> generative alorithm ----> damaged or new one
+
+actually speaking the way these ML system works might be complex in real time. for instace a specific product image
+cane be screened or labelled properly before getting it used via the generative model. on a senond thought any 
+product can be fed to another model that reshapes the product into a better resolution product which in turn gets 
+consumed via the generative model. so the point here is that a simple looking ML system from eyeballing does not 
+seem to be that easy, instead it has a series of complex steps running in sequence to produce desired result. 
+
+This is an example of a ML pipeline followed by steps, where there is one step that performs a specific task 
+(using a model) and output of that step will be the input for the next step (another model). However, in reality
+metrics to monitor a pipeline remains intact with our ML system monitoring phase meaning that one can very well
+perform all prescribed metrics like software metrics (for each step or whole pipeline), input and output metrics 
+in this case as well. 
+
+
+
+
 # MLOps_End_to_End
