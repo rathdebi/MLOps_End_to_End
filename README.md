@@ -31,6 +31,7 @@ management, service infrastructure and monitoring that surrounds ML code in orde
 - models (build, select, train model and run error analysis)
 - deployment ( run in production and monitor)
 
+
 accepting challenges of deployment:-
 ====================================
 Once after deploying model in production there could be two challenges that may arise or pop up. 
@@ -136,6 +137,38 @@ let us discuss about different types automation.
 	- AI assistane ( helps human to a greater degree)
 	- partial automation ( consider ML model predictions confidence, if not send it to human)
 	- full automation ( ML model is taking every single decision)
+
+
+monitoring a ML system:-
+========================
+A ML system should be monitored throughly to make sure that it meets required performace expectation. Well, how
+can we ascertain all kinds of monitoring parameters in a ML system ? Most commnly, a ML system can be monitored
+by building a dashboard with all parameters over time. Let us delve into this discussion.
+
+Broadly speaking, monitoring can be done in following aspects,
+	- server load ( ideally keeps a track of server load in ML system) 
+	- missing input values
+	- not null outputs
+
+And therefore proper data understanding should be always handy, in fact a brainstorming session in order to 
+understand what could possibly go wrong with your data over time. Always keep a tab on data that will be used 
+to run your ML system in each iteration and put all checks to safeguard. Besides that brainstorming with a few 
+statistics will help the team to decide what went wrong, and stuffs like that.
+
+To help us get more details around monitoring aspect here are a few key metrics to put a call,
+	- software metrics ( latency, throughput, server load, memory )
+	- input metrics ( input distribtion of X's, like avg. input length, total missing values)
+	- output metrics ( output as null, user search, user web search)
+
+This is in continuation with the fact that most ML system are iterative process and hence input and output data 
+plays a vital role to meet expected performance. That clearly states that a ML system will have to be stringently
+monitored with input and output metrics. Like modelling, deployement is also a iterative process as well from traffic
+to attain effetive performance. Adding all these checks and balances (thresholds) to ML system will definitely help, navigate through issues with 
+a root cause analysis. These set up will eventually trigger all possible issues before you hit a roadblock or a deadend.
+
+Most of ML systems in place are equipped with automated retraining or manual retraining. For many applications manual
+retraining looks more in action and in some consumer based applications there may be complete automated training in 
+place to fix any kinds of alerts or change.
 
 
 # MLOps_End_to_End
