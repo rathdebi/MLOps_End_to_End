@@ -101,6 +101,7 @@ one thing to keep in mind here is that all the cases related deployment performs
 	- rollback operation
 
 As per deployment cases different types of deployment strategy attain its meaning. let us delve into each of them.
+	
 	- shadow mode:-
 	---------------
 		
