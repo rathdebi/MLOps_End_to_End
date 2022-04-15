@@ -177,10 +177,11 @@ as part of our earlier example of visual inspection model that predicts a produc
 from its image.
 
 here the model will take an example image of of product, run the model and predits whether or not any given
-product image is damged or new one.
-
+product image is damged or new one. 
 
 product image ----> generative model -------> damaged or new one
+
+
 product image ----> generative model -------> better resolution and product screening ----> generative alorithm ----> damaged or new one
 
 actually speaking the way these ML system works might be complex in real time. for instace a specific product image
