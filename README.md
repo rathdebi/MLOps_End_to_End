@@ -198,5 +198,61 @@ in this case as well.
 
 
 
+best practices to build ML models:-
+===================================
+From project to project building production ready ML system offers different set of challenges. This will start
+from receiving suggesstions till improve model using error analysis. 
+
+the way ML system grown up these days by correcting models rather than data with complex neural network architecture. However , it has been found that 
+in practicality using a data centric view makes it more efficinet and improved in so many ways. 
+
+For instance while designing a complex neural network the focus can be shifted to provide the model high quality data than just to
+tweak model all the time. But then feeding only high quality data would not suffice, a time consuming process, 
+and therefore tools  can be used to enrich data with very little less time. 
+
+
+ML System:--
+============
+ML system is basically made up of model/code and data. In this time, the ask is to build a very good ML system that
+often demands a very good model to make good predictions on data. Another way, specific use cases will do pretty well
+with some baseline models (from github) available but providing high quality data can surely enhance its performance
+to a new level.
+
+Model Development is an itertaive process where a model, data and tuned hyperparameters yield a very good X-->Y 
+mapping. Then why is model building is such a diffiult task? refer below
+
+	- model does well on training set
+	- model does well on dev/validation/test set
+	- model does well as per specified business metrics or project goals
+
+A typical problem that looks so minute often carry a lot of risk is that a defined ML system in place produces
+less error on dev/test/validation sets still it fails to meet business metrics or goals in outline. Many a times in a many projects there has
+been quite a lot of discussions on ML system can not be approved for production due to so and so reason.
+As ML engineer our task is not just to build models that does very good on test set, well that is to be celebrated,
+but defining that as the final would not deliver the justice to production application. Above all a ML engineer would
+need to build models that truly delivers business expectations instead just to hold on to high test set accuracy. 
+Let us delve into all these bullet points where ML system can not be approved,
+
+	- performance on disproportionate input set:-
+
+		if any ML system that does very well on test set is not able to produce expected business metrics
+		goals then it is not to be used in production. a common example in this case is a loan approval 
+		system which is predicting very diffrerently with cast, gender, ethinicity. by no means this ML
+		system is going to be in production as it exhibits a lot of bias around and hence not approved.
+	
+	- skewed data proportion:-
+	
+		specifically a rare class that holds true in a skewed data distribution eventually not going to 
+		solve the problem where the challenge would be to predict well on rare class input. in a medical 
+		diagnosis system any rare class input prediction result would be equally likely to that of majority
+	        class prediction. well this is very weird, at life risk for any patient and no way this system 
+		should be in production and hence not approved.
+
+
+
+
+
+
+
 
 # MLOps_End_to_End
