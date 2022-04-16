@@ -248,6 +248,49 @@ Let us delve into all these bullet points where ML system can not be approved,
 	        class prediction. well this is very weird, at life risk for any patient and no way this system 
 		should be in production and hence not approved.
 
+estiblish a baseline:-
+======================
+Any ML system in place will have to start with a baseline first to ensure that it uses prior baseline artifacts in 
+order to improve upon. A baseline model will help improve further based on its prior performance as a toolkit.
+
+considering our visual inspection example where ML system consumes several types of input such as good image ,
+slanted image, blurr image and image with good resolution. These images are used to predict whether or not any 
+given image is a new product or a damaged one. With subsequent model iterations you have come to a conclusion 
+that different image type suffers from accuracy level. 
+
+All types of input image accuracies will now cross-verified with a human level inspection to figure out degree of 
+improvement. let us just say, using a blurr image model is giving accuracy around 83 % to that of 89 % human level 
+accuracy. Remaining all checks looks more or less in prescribed accuracy level both from model and human level 
+inspection point of view. it is so clear that using a baseline model as a rough version will keep focus shifted
+to the area of improvement (improving blurr image quality) in need, and so it be. 
+
+why baseline is required:-
+==========================
+generally any ML system used structured data or unstructured data to genetate prediction result. we as humans
+evolved through a process to interpret unstuctured data more efficiently. that is why measuring model accuracy
+with human level inspection could be a very good way to establish a baseline.
+
+in contrast if any ML system uses giant structured data to generate prediction result then using a human level
+inspection to define a baseline would not help that much cause of the fact that humans are not very good at
+interpret huge amount of structured data.
+
+to boil it down into more granular piece let us churn out few pointers that help us creating a robust baseline of
+any model,
+
+	- use human level inspection , mentioned as above.
+	- use state-of-the-art implementation in open source
+	- use a quick and dirty implementation ( using various references from point 2)
+	- use performance of any older system ( use a pre built model accuracy to the starting point)
+
+In nutshell baseline helps to identify what might be possible or impossible from model stand point. besides that
+it also offers what are possible errors to be encountered,a.k.a irreducible error. 
+
+
+
+
+
+
+
 
 
 
