@@ -335,6 +335,42 @@ be making sense. this will pave the path in a right direction rather than wastin
 overfitted dataset.
 
 
+error analysis of model:-
+=========================
+the first time you build any model will not hit the right performance mark as we discussed. In another words
+you can not guarantee that it will not work from the first time. Being an iterative process by definition, ML 
+modelling phase would need to pass throough error analysis phase to produce desired results, and so it be. So,
+then doing a proper error analysis will become the heart of ML modelling process by letting us know what is the
+best way to use time so as to improve modelling performance.
+
+let us take one example of speech recognition to illustrate error analysis. once after model returned out
+some predictions any one can take a handful number of examples like 100 to compare level of predictions. In
+first case you noticed that the word "I went to village" is predicted as "I wanna to village" could be due to
+tag "external noise". In another set of example of "Please return back" is predicted as "plea return back" , looks
+almost identical still some error with a tag "low bandwidth". With these two set of examples and then running all
+examples through a human level inspection will definitely hint towards a possible new tag to be created or to find
+a new tag that better fits any of these input prediction level. in simpler terms an example with "external noise" tag
+can occur due to a "low bandwidth" tag or any new tag like "people noise". This analysis will help us identify what
+are possible tags that are more worthy of creating such errors and thus put more attention to those errors.
+
+As known previously, ML modelling is a completely iterative process, deploying a model is an iterative process,and 
+quite not so surprise to say that error analysis is also an iterative process. 
+
+iterative process of error analysis:-
+=====================================
+during error analysis phase, one must inspect few set of examples to propose new tags that might be used iteratively
+to improve upon. 
+
+referring to visual inspection example,
+
+	- defining new labels to product ( scratched, dent)
+	- image properties ( blurry,dark, light)
+	- other data property ( product model, factory/manufacturing unit)
+	- 
+
+ 
+
+
 
 
 
