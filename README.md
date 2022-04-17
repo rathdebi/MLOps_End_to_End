@@ -1,7 +1,7 @@
 # MLOps_End_to_End
 machine learning project lifecycle---
 
-Many a times , very oftern once after tarining a model , the obvious ask would be to make
+It is prudent practice that once after training a model , the obvious ask would be to make
 it production ready..
 
 a typical deployment example:-
