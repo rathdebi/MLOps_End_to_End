@@ -286,6 +286,66 @@ In nutshell baseline helps to identify what might be possible or impossible from
 it also offers what are possible errors to be encountered,a.k.a irreducible error. 
 
 
+getting started with ML model:-
+===============================
+we all know that building a model is a completely iterative process. as stated earlier process of modelling starts 
+with data, hyperparameters to build a model, make it learnable in training over time and then  perform error analysis.
+once we are satisfied with a good enough model and its performance then defined model can be taken for performace 
+audit trails in order to make it production ready. More precisely building a model or even getting started with it
+as the first step might help to iterate through the process a lot faster.
+
+now the task is to how to get started with modelling. well to get started pay attentionto below pointers,
+	
+	- literature search:-
+
+		the idea is to not get derailed by thinking latest trend, innovation and cutting edge technology, 
+		instead spend some quality time to get literature of the use case or project. For instance spend 
+		few days to collect similar use cases, its overview and gain momentum with a sound understaning.
+
+	- find open source implementation:-
+		
+		after doing a descent amount of literature search, now search for any open source implementation
+		if any. Finding a solution in many ways will help to get going quickly, if needed.
+
+	- reasonable algorithm:-
+		
+		it is always recommended that instead of having a complex function with not so good data, a reasonable
+		algorithm with quality data will outperform most often. so do not get carried away by the fancy stuff,
+		that are used in latest conferences of ai community. of course knowledge is always enlighting. 
+
+once modelling is started a quick question pops up in mind, shoud we consider looking for deployment constaints
+when selecting a model. well the answer to this quite simple a yes or a no. let us see it as per case,
+
+	- yes, consider deployment constraint:-
+		
+		ML system with a baseline established already should look for deployment constraints to build and
+		deploy.
+
+	- no, always an optional choice:-
+
+		if baseline is not yet established, not sure this ML system will work or not or in question then
+		ignore the idea of build and delploy. in this case the focus is to know what is possible
+		in this project, that might help a lot to establish a  baseline.
+
+finally when trying out a learning algorithm, it is prudent practice to perform all sanity checks. at first
+always try to overfit a small amount of training data before training a larger or huge data set. In case of 
+image classification a training example of 10 to 100 will be used in traing to build a model and test accuracy.
+say if model accuracy is not upto the mark, then clearly using a million images from that distribution would not
+be making sense. this will pave the path in a right direction rather than wasting a lot of time training a 
+overfitted dataset.
+
+
+
+
+
+
+ 
+		
+
+
+
+
+
 
 
 
