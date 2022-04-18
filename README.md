@@ -377,6 +377,33 @@ any room of improvement on all data with those tag. these specific questions wil
 inspection on data to better size and improve upon accordingly. these insightful task tells us that creating 
 specific tags will not only identify different segments in data but also ask questions on what to priorotize working upon.
 
+
+using tags that are relevant to segment data properly will definitely set the context of what work to priorotize. let us
+set those tick mark as mentioend below,
+	
+	- with defined tags as per our visual inspection example will identify exact tags that needs attention to improve
+          at first. for instance tags with a "blurry image" will differ from human level inspection prediction gap will be
+	  in prime focus to improve and thus improving an overall accuracy of model.
+
+	- other focus point would be to revisit what percentage of data falls in that defined tag with human level inspection
+	  prediction gap to that of model and tweak it accordingly so as to size a quality improvement that of earlier iteration.
+	
+	- in simpler terms to understand , say that a "blurry image" has attained 85 % accuracy from model perediction which is 
+	  is validated against human level inspection prediction as 93%. Adding on the total data that corresponds to a "blurry
+	  image" tag is around 60 %. This implies that with a human level inspection prediction gap of 8 % (93% - 85%) the model is
+	  going to size with a better accuracy of 4.8 % is the next iteration subject to improve upon "blurry image" tag.
+
+To make it more easy to understand here is a quick summary,
+	
+	- so in general, one should always look for any room of improvement , if any, there is always
+
+	- frequency of tag or category that appears, find required specific about it, if any, always good
+
+	- if there exists any way, do improve upon accuracy that tag or category, put that on priority
+
+	- for instance in case of visual inspection example, a strong case would be to improve accuracies
+	  of "blurry image" tag due to the phone and image quality it renders. 
+
  
 
 
