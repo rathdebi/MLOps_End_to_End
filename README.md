@@ -366,7 +366,16 @@ referring to visual inspection example,
 	- defining new labels to product ( scratched, dent)
 	- image properties ( blurry,dark, light)
 	- other data property ( product model, factory/manufacturing unit)
-	- 
+
+
+useful metrics for each tag:-
+=============================
+in order to perform a better error analysis process it is essential to find what fraction of errors that tag
+consitutes. similiarly another check would be to find out how many data points were misclassified or mislabelled
+with that tag. On the same note out of all data how many data points were having that same tag. Finally is there 
+any room of improvement on all data with those tag. these specific questions will help preparing a more human level
+inspection on data to better size and improve upon accordingly. these insightful task tells us that creating 
+specific tags will not only identify different segments in data but also ask questions on what to priorotize working upon.
 
  
 
