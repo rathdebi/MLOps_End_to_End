@@ -505,6 +505,27 @@ auditing process should be conducted within the team to navigate through these i
 efficient and robust with its prediction power.
 
 
+data centric ai development:-
+=============================
+in the rise of ai one of the most crucial aspect is to build a model that possess very good prediction power.
+to achieve that supremacy there are two ways one needs to follow. The first one is model centric developement 
+meaning that data is fixed and model is tuned with best possible way to make things happen. in contrast data 
+centric approach takes model as fixed and work on data side to bring that shift. eventually you will notice that 
+working with the later one (data centric) will lead you to develop a better system in place.
+
+well, this is due to the fact that running a model on the same data tends to overfit once it attains a level of 
+competence. for instance using a complex neural netwrok with several tweaks can increase accuracy of model ever 
+so slightly, no denial. perhaps a better counter intuitive approach would be to know specifics of data, enrich it
+ with right set of attributes such that model will consume high quality data from its previous run. The possible 
+outcome will be a significant increase in accuracy as we would have desired for,so it be.
+
+
+
+
+
+
+
+
 
 
 
