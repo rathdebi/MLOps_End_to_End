@@ -468,6 +468,58 @@ number metric to select the best model with differenet classes. More importantly
 score and priorotize that class to meet human level performance.
 
 
+audit performance:-
+===================
+even when your model is doing all good with accuracy, F1 score and all it is worth doing performance audit
+that could save a lot of time during post deployment task. By enlarge a ML system follows an iterative process
+to develop a good learning algorithm. 
+
+Here is a framework to double check your system on accuracy,fairness/bias and other problems that might be a blocker going forward.
+	
+	- brainstom the ways subject to which your system might go wrong
+	- does your algorithm perform well on different subsets ( dev/validation/test)
+	- how common are certain FP and FN , get a better grab on it
+	- performance on rare classes
+
+Afterwards, establish metrics to assess performance against these issues on differenet sets of data. It is always
+a good practice to inform business/product owner aware (buy-in) of all these issues prior, and accordingly do the 
+necessary change/update in system before deploying it to production.
+
+example:-
+==========
+let us discuss about our visual inspection use case on these issues,
+
+	- what is the accuracy of model on different images (blurry,high/low resolution and etc.)
+	- accuracy on different kinds of dpi level of image
+	- any relevance of image orientation
+
+establish metrics to assess performance against these issues,
+	
+	- mean accuracy among all kinds of images
+	- mean accuracy among all kinds of dpi level images
+	- relevance of any output that is not accepted (wrong)
+
+Having said all these performance audit can be really shaping your system to a desirable state by remiving out
+all noise and inconsistencies. it is seen that rather than one person doing the brainstorming session performance 
+auditing process should be conducted within the team to navigate through these issues and thus making system more 
+efficient and robust with its prediction power.
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
 
 
 
