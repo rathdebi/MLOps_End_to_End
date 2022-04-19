@@ -402,7 +402,77 @@ To make it more easy to understand here is a quick summary,
 	- if there exists any way, do improve upon accuracy that tag or category, put that on priority
 
 	- for instance in case of visual inspection example, a strong case would be to improve accuracies
-	  of "blurry image" tag due to the phone and image quality it renders. 
+	  of "blurry image" tag due to the phone and image quality it renders.
+	  
+	  
+
+skewed dataset:-
+================
+in general , dataset that are very far from postive to negative case apart from being 50% in both or relatively equal,
+are called as skewed dataset. being able to make modelling look better urge you to handle skewed data in detail. Let
+us say a manufacturing unit produces product out of which 99 % are no defect(Y=0) and 1% or less are tagged as defecttive
+pieces (Y=1). Then a simple print("0") would do the same task of a model that always predicts Y=0. In this specific
+case model does well on accuracy but did not generalize well when there is a case of "defective piece", which is true
+as we have 1 % product with defetctice pieces. That means a defective piece is predicted as non defective piece by
+the model that is trained on skewed data and so often this prediction can go horribly wrong.
+
+let us navigate through this issue to derive a better understanding using a confusion matrix.
+
+considering the same example let us say in total we collect 1000 sample prediction result. a confusion matrix
+is designed on both actual lables and prediction on those labels. it looks like a grid of 2*2 axis having 4 celss
+where rows represents prediction and column represents actuals. A confusion matrix will have four specific types of 
+values mentioned as below,
+	
+	- TRUE POSITIVE ( actual 1 and model predicted also 1)
+	- TRUE NEGATIVE ( acual 0 and model predicted also 0)
+	- FALSE POSTIVE ( actual 0 and model predicted as 1)
+	- FALSE NEGATIVE ( actual 1 and model predicted as 0)
+
+Total number of examples in any case would sum upto values present in each of the 4 cells. For instance let us say
+905 records from total obs. are actually non detective product and model also predicted the same (TN). Similarly
+let us say that 68 obs. are actually defective product and model also predicted the same (TP). Besides that 18 obs.
+which are wrongly classified as negative but those are actually postive (FN). And likewise, there are 9 obs.
+which are wrongly classified as positive but  those are actually negative (FP). 
+
+evaluation metrics using confusion matrix:-
+===========================================
+
+The precision of model in this case ,
+	
+	P = TP/(TP+FP) = 68/(68+9) = 88.3 %
+
+it means that out of all predictions as 1's (positive) how many of them are actually 1's
+
+The recall of model in this case ,
+
+	R = TP/(TP + FN) = 68/(68+18) = 79.1 %
+
+it means that out of all actuals as 1's (positive) how many of them are predicted as 1's
+
+It turns out that the use precision and recall looks more convienient then that of overall accuracy.
+
+Any learning algorithm that always predicts 0 no matter what input example is given meaning that FP and TP
+does not have any prediction at all. In this case Precision can not be calculated and recall would become 0
+based on the formula given above. So a model that is able to produce good precision might not be good with recall 
+score. That is the reason why we should be looking at another parameter that in a way combine both precision and 
+recall equally, a.k.a F1 score.
+
+
+	F1 score = 2/(1/P + 1/R) 
+
+It means model that has a high precision and low recall would definitely get adjusted using F1 score and 
+can be used in more efficiently to select a better model from a group of models. Essentially F1 score will help
+business to identify right set of evaluation metrics in model iterattion instead just looking at precision and 
+recall. more precisely to say , if you have multi class classification problem using F1 score will give a single
+number metric to select the best model with differenet classes. More importantly you can pick the class with high F1
+score and priorotize that class to meet human level performance.
+
+
+
+
+
+ 
+
 
  
 
