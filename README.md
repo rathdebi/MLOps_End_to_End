@@ -499,8 +499,8 @@ establish metrics to assess performance against these issues,
 	- mean accuracy among all kinds of dpi level images
 	- relevance of any output that is not accepted (wrong)
 
-Having said all these performance audit can be really shaping your system to a desirable state by remiving out
-all noise and inconsistencies. it is seen that rather than one person doing the brainstorming session performance 
+Having said all these performance audit can be really shaping your system to a desirable state by removing out
+all noise and inconsistencies before time. it is seen that rather than one person doing the brainstorming session performance 
 auditing process should be conducted within the team to navigate through these issues and thus making system more 
 efficient and robust with its prediction power.
 
