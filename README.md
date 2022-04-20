@@ -560,6 +560,41 @@ this will ensure that it is worth using data augmentation ( synthetic data) not 
 internally saves a lot of time tweaking models and hyperparameters.
 
 
+adding more data:-
+==================
+often times it is advised that one should generate good amount of data using data augmentation process, if required,
+to ensure generative algorithm has enough data to train. well this will create a new problem out of thin air,and to
+be specific it is about data distribution. almost all machine learning algorithm uses a same distribution of dev and
+validation/test to go along. with data augmentation you are adding a lot of new examples to the dev set which will have
+a different data distribution than validation/test set. Honestly the answer to this is a NO.
+
+let us iterate through to make a better understanding. say if,
+
+	- you are working on a unstructured data problem
+	- your learning algorithm is large (low bias, a complex neural network) 
+	- with a clear mapping of X->Y ( a human can predict easily on any given input X)
+
+Then in this case adding more of synthetic data rarely hurts performance.
+	
+	- say earlier you have 20 % of data labelled with a specific tag
+	- using data augmentation it got increased to 50% for that tag
+	- now as long as our model is large with a clear mapping X->Y
+	- performance will improve not only for that tag but for other tags as well
+
+In contrast if you are adding data that does not define a clear mapping, then performance might be impacted badly.
+for instance adding images where a human can not surely tell that whether or not there is a scratch mark in product
+then algorithm find it very difficult to learn as well, as it is not sure about it. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
