@@ -533,6 +533,35 @@ collect more data around, performance of your model would eventually tend to be 
 categories as input.
 
 
+data augmentation can be an efficienet way to help improve performance of your learning algorithm by adding
+more synthetic data as input. while carrying out data augmentation step there are a lot things to look after like
+what are the parameters, how to design the augmentation process and what not.
+
+let us discuss about few key pointers that will guide us through the best practices.
+
+	- create realistic examples where model will perform poor than human level inspection
+	- X->Y mapping should be expected (using synthetic data can human recognize output)
+	- does the algorithm work poorly on this ?
+
+if you put these as a checklist at present and try to retrain learning algorithm with new set of synthesized 
+data then higher chances are that the learning algorithm will perform well.
+
+to understand it in a easy way let us consider visual inspection,
+	
+	1- say we added different types of background images (using tools and techniques)
+	2- it is to ensure that we added images where a scratch mark can be visible (by human)
+	3- if not , then find a way or prepare data accordingly so that product scratch mark can be spotted
+	4- try to verify human level performance on synthesized data, if yes, then model eventually does well
+
+you have heard saying model iteration loop and similarly its like data iteration loop can be used as well in 
+data centric ai development. The loop will start with adding/modifying data, training and then performing error 
+analysis in a cycle until we find a better learning algorithm subject to condition that we fixed model constraints.
+this will ensure that it is worth using data augmentation ( synthetic data) not only performance is improved but 
+internally saves a lot of time tweaking models and hyperparameters.
+
+
+
+
 
 
 
