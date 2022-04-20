@@ -520,6 +520,24 @@ so slightly, no denial. perhaps a better counter intuitive approach would be to 
 outcome will be a significant increase in accuracy as we would have desired for,so it be.
 
 
+data augmentation:-
+====================
+a concept of data augmentation can improve performance of a learning algorithm. any ML system ever built will pass 
+through series of performance audit to meet human level expectation and improve upon. During this process model
+performance will get compared with human level performance. From performance across all such tags or categories 
+available in data one thing is clear that there is always a room for improvement. say that a tag or category that 
+is not making good performance can be adjusted with more quality data so as to improve. this is so true in case of 
+unstructured data and thus a quality improvement will guarantee significant  improvement in respective other tag or 
+category as well courtesy of data augmentation technique. needless to say whether you apply data augmentation or 
+collect more data around, performance of your model would eventually tend to be a better function of all spaced tags or 
+categories as input.
+
+
+
+
+
+
+
 
 
 
