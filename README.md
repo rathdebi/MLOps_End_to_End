@@ -586,6 +586,39 @@ for instance adding images where a human can not surely tell that whether or not
 then algorithm find it very difficult to learn as well, as it is not sure about it. 
 
 
+adding features:-
+=================
+unlike unstructured data creating synthetic new data is very difficult as in case of structured data. but there is 
+another way to tackle this by creating meaningful features instead adding more data points. let us take one example
+to make it clear,
+	
+	- say a neural network uses people info. and restaurats nearby to recommend products
+	- let us say for vegetarians the model predicts non-veg products as well, not so good
+	- in this case using data augmentation people and restaurants info can not be created
+	- rather we can think of possible features like,
+
+		- food preferences (veg or non-veg) given by restaurant as a new feature
+		- vegetarian food options available in a restaurant
+
+As product team needs to improve performance, ML team needs to ask all these relevant questions on how these features
+can help make better decisions. over these years product recommendations are being given basis on two different 
+algorithms known as collaborative filtering and content based filtering.
+	
+	- collborative filtering focus on users information
+	- content based filtering focus on user, preferences and all other information
+
+the advantage of content based filtering is to effectively recommend prodcucts even if it is not liked
+by users or it is not used at all unlike collaborative filtering that takes users association into account.
+
+
+as structured data accounts for adding new features and thus data iteration loop in this case will eventually
+iterate through add/modify(features) , model, train and error analysis phase. error analysis in case of structured 
+data would be very difficult if we do not have a very good baseline. a good baseline is difficult as humans can not 
+easily predict well. the only way to perform error analysis is to collect feedback and competitors info that provides
+a way to add more creative features.
+
+
+
 
 
 
