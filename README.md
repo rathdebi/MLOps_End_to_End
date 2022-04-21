@@ -651,6 +651,27 @@ Now what is good data ? let us deep dive into it,
 	- defined consistently meaning Y's unambigious
 	- receive timely feedback from production that covers data drift and model drift
 	- sized appropriately
+	
+
+
+data definition:-
+=================
+it is so true to say that data sets the tone for model training and evaluation process. however, data definition 
+can be a really hard task depending upon the strategy that you follow to collect data. let us consider our visual
+inspection example which requires a lot of images and so a couple labllers collected data and labelled it.any image 
+that contains a clear scratch mark spots can be tagged as a single boundix box whereas the same can be tagged as 
+differently using two bounding box, one for scratch mark and other one is for spots. between these data labellers 
+probably the one who has does it with more scrunity and sanity checks strikes a mark on data definition. this process
+examines that if you consistently labelled the data then learning algorithm is going to perform well on future. more
+importantly data stage is all set to create correct data  and labels (X's,Y's), organize data which will be
+used in modelling phase to produce good results.
+
+common data defintion questions to be asked,
+
+	- what are my X's? high resolution, low resolution image
+	- what features need to be included? a collective effort
+	- what should be target lable Y? consisent labelling 
+
 
 
 
