@@ -618,6 +618,41 @@ easily predict well. the only way to perform error analysis is to collect feedba
 a way to add more creative features.
 
 
+experiment tracking:-
+=====================
+
+now that we are working iteratively to improve learning algorithm one thing that stands out is to record 
+experiement tracking. having a better tracking system in place helps us in finding set of models and hyperparameters
+that fits well on data. experiment tracking will be in place to track,
+
+	- algorithm versioning
+	- data used
+	- hyperparameters
+	- output/results
+
+several tools and techniques are available to keep a tab on, however a simple text file can be used to save
+data synthesis steps and algorithm tweak or data drift/model drift and error analysis. this will help us navigate 
+through and back track model run logistics at times of need, and thus save a lot of time. experiment tracking
+tools like sagemaker studio, azure ml studio and tensrflow can automate this process to a large extent by providing
+a detail report of respective model run. do remember that a experiment tracking system is a must to have and remember
+that it is going to help find our what models you have selected, what data analyis you have performed in oder to
+replicate  results going forward.
+
+
+big data to good data:-
+==========================
+we have seen all about data iteration loop in detail. but then there is this concept of big data to good data
+as a shift. in  modern ai era consistently getting high quality data in all phases of ML project has become utmost
+priority. 
+
+Now what is good data ? let us deep dive into it,
+
+	- covers importnat cases meaning that X's coverage is good
+	- defined consistently meaning Y's unambigious
+	- receive timely feedback from production that covers data drift and model drift
+	- sized appropriately
+
+
 
 
 
